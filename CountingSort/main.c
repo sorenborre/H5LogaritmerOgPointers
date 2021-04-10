@@ -14,7 +14,6 @@ int main()
                      1,11,13,0,5,5,9,13,7,8,9,13,13};
 
 
-
     printf("input array: ");
     PrintArray(input, 52);
 
@@ -25,7 +24,9 @@ int main()
     //an auxiliary array containing k elements where k represents the range between 0 and maximum value in input array
     pAux = (int *) calloc(14, sizeof(int));
 
-    CountingSort(pInput, pOutput, pAux, 14, 53);
+    CountingSort(pInput, pOutput, pAux, 14, 52);
+    free(pOutput);
+    free(pAux);
 
     return 0;
 }
@@ -35,7 +36,7 @@ void CountingSort(int *pInput, int *pOutput, int *pAux, int auxSize, int inputSi
     int i;
 
     //counts the occurrence of a number. fx the array[3] holds x number of times elements with the value of 3 occured. The index value correspond to the element value.
-    for (i = 1; i < inputSize; i++)
+    for (i = 1; i <= inputSize; i++)
     {
         *(pAux+*(pInput+i))+=1;
     }
