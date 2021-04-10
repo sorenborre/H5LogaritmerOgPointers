@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1617992043 source:g:\c\countingsort\main.c
+	<stdio.h>
+	<stdlib.h>
+

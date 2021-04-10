@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1617824139 source:g:\c\h5sort\main.c
+	<stdio.h>
+	<stdlib.h>
+
